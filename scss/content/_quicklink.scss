@@ -1,0 +1,55 @@
+.HQLinks {
+    // opacity: 0;
+    grid-area: linksec2;
+    grid-row: span 2 / 4 !important;
+    z-index: 3 !important;
+    transform: translate3d(0px, 20vh, 0px);
+    display: grid;
+    grid-column-gap: 4px;
+    grid-template-columns: repeat(3, minmax(211px, 1fr));
+    grid-template-rows: minmax(120px, 40vh);
+    &__link {
+        border-radius: 10px;
+        margin: 10px 0;
+        max-height: 250px;
+        background-color: lightgrey;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        transition: background 300ms, color 300ms;
+        &:nth-child(1) {
+            animation-delay: 0ms;
+        }
+        &:nth-child(2) {
+            animation-delay: 50ms;
+        }
+        &:nth-child(3) {
+            animation-delay: 100ms;
+        }
+        &:hover {
+            background-color: rgba($footlinkcolor, 0.99);
+            color: white;
+        }
+    }
+    &.appear > &__link {
+        animation-name: FadeInUp;
+        animation-duration: 400ms;
+        animation-timing-function: ease;
+        // animation-delay: ;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: both;
+    }
+    &__p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .icon {
+        padding: 10px;
+        font-size: 10em;
+    }
+}
+.appear {
+    opacity: 1 !important;
+    transform: translate3d(0px, 0vh, 0px);
+}

@@ -1,0 +1,117 @@
+.foot {
+    ul {
+        list-style: none;
+    }
+    grid-area: footer;
+    background-color: $footercolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &__link {
+        position: relative;
+        text-decoration: none;
+        color: $footlinkcolor;
+        font-weight: 550;
+    }
+    &__div {
+        h3 {
+            margin-bottom: 5px;
+            color: $footerh2;
+            font-weight: 800;
+        }
+        position: relative;
+        margin: 30px 5px;
+        padding: 0px 10px;
+        height: min-content;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 25px;
+            transition: height 350ms ease;
+            background-color: $footerh2;
+        }
+        &:hover::before {
+            height: 100%;
+        }
+    }
+}
+
+.region {
+    border: none;
+    display: inline-flex;
+    margin: 5% 20px 5% 20px;
+    &::before {
+        display: none;
+    }
+    select {
+        outline: none;
+        border: 1px solid white;
+        border-radius: 7px;
+        padding: 3px;
+        background: transparent;
+    }
+}
+
+.footer__bottom {
+    grid-area: footerbottom;
+    background-color: $bottomcolor;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom {
+    font-size: 1.08rem;
+    &__link {
+        color: inherit;
+        text-decoration: none;
+        padding-right: 5px;
+        border-right: 2px solid white;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+.social {
+    font-size: 17px;
+    width: 30vw;
+    white-space: nowrap;
+    &__link {
+        background-color: white;
+        text-decoration: none;
+        font-size: inherit;
+        border: 2px solid white;
+        padding: 5px 5px 0 5px;
+        border-radius: 25%;
+    }
+    &__follow {
+        font-size: 1.08rem;
+    }
+    .facebook-icon {
+        color: $facebook;
+        &:hover,
+        &:focus {
+            border: 2px solid $facebook;
+        }
+    }
+    .twitter-icon {
+        color: $twitter;
+        &:hover,
+        &:focus {
+            border: 2px solid $twitter;
+        }
+    }
+    .linkedin-icon {
+        color: $linkedin;
+        &:hover,
+        &:focus {
+            border: 2px solid $linkedin;
+        }
+    }
+}

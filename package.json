@@ -1,0 +1,16 @@
+{
+  "name": "projtemplate",
+  "version": "1.0.0",
+  "description": "Courier Management Service Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kuntal Das",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

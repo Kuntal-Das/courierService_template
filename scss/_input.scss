@@ -1,0 +1,61 @@
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    font-size: 18px;
+    margin: 2.5px;
+    padding: 25px 5px 3px 5px;
+    background: #f2f2f2;
+    border-left: 3px solid #f2f2f2;
+    transition: 150ms ease;
+    &:focus {
+        font-size: 18px;
+        border-left: 3px solid black;
+    }
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin: 3px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid $blue;
+    background-color: $blue;
+    @include uppercase;
+    &:hover,
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.floating-placeholder {
+    top: 35%;
+    left: 5%;
+    position: absolute;
+    text-shadow: none;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+    text-transform: capitalize;
+    pointer-events: none;
+    font-weight: bold;
+    pointer-events: none;
+    transition: top 500ms ease, color 500ms ease, font-size 500ms ease !important;
+}
+
+.inputbox {
+    width: 100%;
+    position: relative;
+    input:focus ~ .floating-placeholder {
+        color: $blue;
+    }
+    input:focus ~ .floating-placeholder,
+    input:valid ~ .floating-placeholder {
+        top: 10%;
+        font-size: 12px;
+    }
+}

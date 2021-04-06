@@ -1,0 +1,8 @@
+.container {
+    display: grid;
+    grid-template-columns:
+        1fr minmax(128px, 1fr) minmax(320px, 25vw)
+        minmax(320px, 25vw) minmax(128px, 1fr) 1fr;
+    grid-template-rows: auto minmax(20vh, 125px) minmax(auto, 125px) auto auto auto;
+    grid-template-areas: "header header header header header header" "header header header header header header" ". . linksec2 linksec2 . ." "content content content content content content" "footer footer footer footer footer footer" "footerbottom footerbottom footerbottom footerbottom footerbottom footerbottom";
+}

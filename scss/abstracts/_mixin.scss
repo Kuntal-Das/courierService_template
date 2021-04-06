@@ -1,0 +1,14 @@
+@mixin mediaQ($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin navBtnPadding {
+    padding: 12px 13px;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

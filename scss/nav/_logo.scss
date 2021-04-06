@@ -1,0 +1,8 @@
+.logo {
+    transition: transform 200ms ease-out;
+    margin-left: 2rem;
+    &:hover,
+    &:focus {
+        transform: scale(1.02);
+    }
+}

@@ -1,0 +1,12 @@
+1.install npm extention in vs code
+2.install Node.js
+3.install gulp-cli [npm install gulp-cli -g]
+4.[npm init] give info
+5.[npm install --save-dev gulp gulp-sass browser-sync]
+6.create "gulpfile.js"
+7.create "~/scss/*.scss"
+8.run [gulp watch] in cmd inside the proj folder
+
+
+[browser-sync star --server --files *.html css/*.css js/*.js] OR
+[browser-sync star -s -f *.html css/*.css js/*.js] - in project dir

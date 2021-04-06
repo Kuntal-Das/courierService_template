@@ -1,0 +1,45 @@
+@keyframes FadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0px, 100px, 0px);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes LightSpeedIn {
+    from {
+        transform: translate3d(100%, 0, 0) skewX(-30deg);
+        opacity: 0;
+    }
+
+    60% {
+        transform: skewX(20deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: skewX(-5deg);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes scrolldown {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

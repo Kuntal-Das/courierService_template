@@ -1,0 +1,53 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(14, 14, 14, 0.45);
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transform: scale3d(0, 0, 0);
+    transform-origin: top right;
+    transition: transform 150ms linear;
+    z-index: 1000;
+    &.active {
+        transform: scale3d(1, 1, 1);
+    }
+    .close {
+        position: absolute;
+        right: 7rem;
+        top: 1.75rem;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        border-radius: 25%;
+        // transition: background-color 250ms linear;
+        &::after,
+        &::before {
+            position: absolute;
+            box-sizing: border-box;
+            margin: 1rem;
+            left: -1rem;
+            content: "";
+            height: 2px;
+            width: 33px;
+            background-color: floralwhite;
+            transition: transform 200ms linear;
+        }
+        &:hover,
+        &:focus {
+            background-color: red;
+        }
+        &:hover::after,
+        &:focus::after {
+            transform: rotate(45deg);
+        }
+        &:hover::before,
+        &:focus::before {
+            transform: rotate(-45deg);
+        }
+    }
+}

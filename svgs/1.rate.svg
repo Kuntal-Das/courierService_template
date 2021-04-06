@@ -1,0 +1,7 @@
+<svg id="rate" data-name="rate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.81 112.88">
+  <g class="calculator" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2.36 43.38h45.28a.86.86 0 0 1 .86.86v66.28a.86.86 0 0 1-.86.86H2.36a.86.86 0 0 1-.86-.86V44.24a.86.86 0 0 1 .86-.86z"/>
+    <path d="M7.51 49.4h34.98v18H7.51zM7.5 77.38h5M17.5 77.38h5M27.5 77.38h5M37.5 77.38h5M7.5 87.38h5M17.5 87.38h5M27.5 87.38h5M7.5 97.38h5M17.5 97.38h5M27.5 97.38h5M40.5 87.38v10"/>
+  </g>
+    <path class="parcel" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M87.69 11.4L43.21 32.41M111.31 22.5L66.78 43.51M66.78 43.51v42.02M66.78 43.51L22.16 22.5M22.16 38.94V22.5l44.62-21 44.53 21v42.02L66.78 85.53l-14.22-6.99"/>
+</svg>

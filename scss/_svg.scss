@@ -1,0 +1,16 @@
+.proj-logo {
+    max-width: 250px;
+    min-width: 180px;
+    height: inherit;
+    background-image: url(../../svgs/project_logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background 100ms;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    font-size: inherit;
+}
